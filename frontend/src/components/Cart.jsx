@@ -18,7 +18,7 @@ export default function Cart() {
       prev.flatMap((item) => {
         if (item.id !== id) return [item];
         const newCount = item.count - 1;
-        if (newCount <= 0) return []; // elimina si llega a 0
+        if (newCount <= 0) return [];
         return [{ ...item, count: newCount }];
       })
     );

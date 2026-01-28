@@ -5,7 +5,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const [feedback, setFeedback] = useState(null); // { type: "success"|"danger", text: string }
+  const [feedback, setFeedback] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
